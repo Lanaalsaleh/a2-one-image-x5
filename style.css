@@ -1,0 +1,7 @@
+/* entire web page */
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
