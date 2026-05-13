@@ -1,0 +1,20 @@
+/* entire page background */
+body {
+    background: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* image styling */
+img {
+    width: 400px;
+
+    transform:
+        rotate(5deg)
+        scale(0.9);
+
+    filter:
+        contrast(150%)
+        saturate(120%);
+}
