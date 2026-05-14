@@ -185,3 +185,15 @@ body {
     filter:
     contrast(250%);
 }
+/* page three */
+.page-three 
+{
+ border-top: gray solid 1px;
+    border-bottom: rgb(101, 101, 101) solid 1px;
+    min-height: 100vh;
+
+    overflow: hidden;
+
+    padding: 120px 100px;
+
+}
