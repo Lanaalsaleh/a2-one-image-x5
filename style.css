@@ -65,7 +65,7 @@ body {
 /* image row */
 .image-row {
     display: flex;
-    margin-top: 200px;
+    margin-top: 50px;
     gap: 40px;
     margin-left: -155px;
 }
