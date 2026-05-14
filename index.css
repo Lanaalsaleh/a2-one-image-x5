@@ -188,12 +188,48 @@ body {
 /* page three */
 .page-three 
 {
- border-top: gray solid 1px;
-    border-bottom: rgb(101, 101, 101) solid 1px;
+ border-top: rgb(81, 81, 81) solid 1px;
+    border-bottom: rgb(49, 49, 49) solid 1px;
     min-height: 100vh;
 
     overflow: hidden;
 
     padding: 120px 100px;
 
+
+}
+
+/* image stack */
+.glitch-stack {
+    position: relative;
+    width: 500px;
+    height: 700px;
+    margin: 0 auto;
+}
+/* all images overlap */
+.glitch-stack img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+/* orginal image */
+.base-img {
+    position: relative;
+    z-index: 1;
+}
+/* red layer */
+.glitch-red {
+    transform: translateX(-15px);
+
+    opacity: 0.5;
+
+    filter: 
+    hue-rotate(-50deg)
+    contrast(200%);
+
+    mix-blend-mode: screen;
+
+    z-index: 2;
+    
 }
