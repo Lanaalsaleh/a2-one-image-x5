@@ -52,25 +52,30 @@ body {
 }
 /* left text block */
 .page-one .text-block {
-    width: 30%;
+    width: 40%;
 }
 /* page one heading */
 .page-one h2 {
-    font-size: 3rem;
+    font-size: 1rem;
     margin-bottom: 20px;
 }
+/* image row */
+.image-row {
+    display: flex;
+    margin-top: 180px;
+    gap: 40px;
+}
 /* distorted image */
-.page-one img {
+.image-row img {
     width: 500px;
+
     transform:
     rotate(5deg)
     scale(0.9)
     translateX(30px);
 
-    Filter:
+    filter:
     blur(1px)
     contrast(220%);
-    
 
-    
 }
