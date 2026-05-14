@@ -41,18 +41,20 @@ body {
 }
 /* page one section */
 .page-one {
-  min-height: 100vh;
+  
   border-top: 1px solid white;
   border-bottom: 1px solid white;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: flex-start;
-    padding: 100px;
+    padding:  120px 100px;
+    overflow-x: hidden;
+
 
 }
 /* left text block */
-.page-one .text-block {
-    width: 40%;
+.page-one-text{
+ width: 700px;
 }
 /* page one heading */
 .page-one h2 {
@@ -62,8 +64,9 @@ body {
 /* image row */
 .image-row {
     display: flex;
-    margin-top: 180px;
+    margin-top: 200px;
     gap: 40px;
+    margin-left: -150px;
 }
 /* distorted image */
 .image-row img {
