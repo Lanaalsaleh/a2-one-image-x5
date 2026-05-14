@@ -1,0 +1,187 @@
+/* entire web page */
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* intro opening section */
+#intro {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+}
+/* main heading */
+#intro h1 {
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
+ /*description paragraph */
+#intro p {
+    max-width: 700px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+/* image styling */
+#intro img {
+    width: 350px;
+    display: block;
+    margin: 0 auto;
+}
+/* scroll text */
+ .scroll-text {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    opacity: 0.7;
+    text-align: center;
+}
+/* page one section */
+.page-one {
+  
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding:  120px 100px;
+    overflow-x: hidden;
+
+
+}
+/* left text block */
+.page-one-text{
+ width: 700px;
+ font-size: 0.7rem;
+}
+/* page one heading */
+.page-one h2 {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+/* image row */
+.image-row {
+    display: flex;
+    margin-top: 50px;
+    gap: 40px;
+    margin-left: -155px;
+}
+/* distorted image */
+.image-row img {
+    width: 500px;
+    
+
+    transform:
+    rotate(5deg)
+    scale(0.9)
+    translateX(30px);
+
+    filter:
+    blur(1px)
+    contrast(250%);
+
+}
+/* page two section */
+.page-two {
+
+    border-top: gray solid 1px;
+    border-bottom: rgb(101, 101, 101) solid 1px;
+    min-height: 100vh;
+
+    overflow: hidden;
+
+    padding: 120px 100px;
+}
+/* text block */
+.page-two-text {
+    width: 700px;
+    font-size: 0.7rem;
+    margin-bottom: 80px;
+}
+/* fragmented grid layout */
+.fragmented-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+/* fragmented image */
+.fragmented-grid img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+
+    filter: 
+    contrast(180%)
+    blur(1px);
+
+    transition: 0.4s;
+}
+/* top left  */
+.fragmented-grid img:nth-child(1) 
+{
+    transform: 
+    rotate(-5deg) 
+    translateY(-20px);
+}
+/* center */
+.fragmented-grid img:nth-child(2) 
+{
+    transform: 
+    skew(-4deg,3deg)
+    translateX(20px);
+
+    filter:
+    contrast(220%)
+    hue-rotate(40deg);
+}
+/* top right */
+.fragmented-grid img:nth-child(3) 
+{
+    transform: 
+    rotate(6deg)
+    scale(0.9);
+    filter:
+    sepia(70%)
+}
+/* bottom left */
+.fragmented-grid img:nth-child(4) 
+{
+    transform: 
+    translateY(40px);
+
+    opacity: 0.7;
+
+    filter: grayscale(60%);
+}
+/* bottom right */
+.fragmented-grid img:nth-child(5) 
+{
+    transform: 
+    skew(5deg)
+    translateX(-20px);
+}
+/* bottom center */
+.fragmented-grid img:nth-child(6) 
+{
+    transform: 
+    rotate(-7deg);
+    
+    filter:
+    invert(0.1)
+    contrast(300%);
+}
+/* hover effect */
+
+.fragmented-grid img:hover
+{
+
+    transform:
+    scale(1.05)
+    rotate(-3deg);
+
+    filter:
+    contrast(250%);
+}
