@@ -66,13 +66,13 @@ body {
 .image-row {
     display: flex;
     margin-top: 50px;
-    gap: 40px;
     margin-left: -155px;
 }
 /* distorted image */
 .image-row img {
-    width: 500px;
-    
+    width: 585px;
+
+    margin-right: -120px;
 
     transform:
     rotate(5deg)
