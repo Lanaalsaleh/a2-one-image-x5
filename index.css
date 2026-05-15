@@ -576,6 +576,7 @@ z-index: 3;
     .image-row {
         flex-direction: column;
         margin-left: 0;
+        display: flex; 
     }
 
     .fragmented-grid {
