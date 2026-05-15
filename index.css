@@ -552,29 +552,36 @@ z-index: 3;
     body {
         overflow-x: hidden;
     }
-     #intro h1 {
+
+    #intro h1 {
         font-size: 2.5rem;
     }
-    .page-one
-    .page-two
-    .page-three
-    .page-four
+
+    .page-one,
+    .page-two,
+    .page-three,
+    .page-four,
     .page-five {
-        padding: 60px 20px;}
-    .page-one-text
-    .page-two-text
-    .page-three-text
-    .page-four-text
+        padding: 60px 20px;
+    }
+
+    .page-one-text,
+    .page-two-text,
+    .page-three-text,
+    .page-four-text,
     .page-five-text {
         width: 100%;
     }
+
     .image-row {
         flex-direction: column;
         margin-left: 0;
     }
+
     .fragmented-grid {
         grid-template-columns: 1fr;
     }
+
     .image-row img,
     .fragmented-grid img,
     .corrupted-img,
@@ -582,6 +589,7 @@ z-index: 3;
         width: 100%;
         height: auto;
     }
+
     .glitch-stack {
         width: 100%;
         height: auto;
