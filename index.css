@@ -105,7 +105,7 @@ body {
 .fragmented-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: -40px;
     margin-top: 80px;
 }
 /* fragmented image */
@@ -172,7 +172,7 @@ body {
     
     filter:
     invert(0.1)
-    contrast(300%);
+    contrast(800%);
 }
 /* hover effect */
 
