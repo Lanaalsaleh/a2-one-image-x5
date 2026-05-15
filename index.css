@@ -547,14 +547,26 @@ z-index: 3;
     position: relative;
 }
 /* adding media querie from goggle */
+/* MEDIA QUERY */
+
 @media (max-width: 768px) {
 
     body {
         overflow-x: hidden;
     }
 
+    #intro {
+        padding: 20px;
+    }
+
     #intro h1 {
         font-size: 2.5rem;
+    }
+
+    #intro img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
     }
 
     .page-one,
@@ -563,6 +575,7 @@ z-index: 3;
     .page-four,
     .page-five {
         padding: 60px 20px;
+        overflow-x: hidden;
     }
 
     .page-one-text,
@@ -571,28 +584,115 @@ z-index: 3;
     .page-four-text,
     .page-five-text {
         width: 100%;
+        max-width: 100%;
     }
 
+    /* PAGE ONE */
+
     .image-row {
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        gap: 20px;
         margin-left: 0;
-        display: flex; 
     }
+
+    .image-row img {
+        width: 100% !important;
+        max-width: 300px;
+        height: auto;
+        margin-right: 0;
+    }
+
+    /* PAGE TWO */
 
     .fragmented-grid {
         grid-template-columns: 1fr;
+        gap: 20px;
     }
 
-    .image-row img,
-    .fragmented-grid img,
-    .corrupted-img,
-    .overload-grid img {
+    .fragmented-grid img {
         width: 100%;
         height: auto;
     }
+
+    /* PAGE THREE */
 
     .glitch-stack {
         width: 100%;
         height: auto;
+    }
+
+    .glitch-stack img {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .page-three-text {
+        text-align: left;
+        margin-top: 40px;
+        margin-left: 0;
+    }
+
+    /* PAGE FOUR */
+
+    .page-four {
+        margin-top: 0;
+        min-height: auto;
+    }
+
+    .page-four-text {
+        width: 100%;
+        padding-top: 20px;
+        padding-right: 0;
+        writing-mode: horizontal-tb;
+        text-align: left;
+    }
+
+    .corrupted-img {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+        transform: none;
+    }
+
+    .corrupted-img img {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    /* PAGE FIVE */
+
+    .page-five {
+        min-height: auto;
+    }
+
+    .page-five-text {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .overload-grid {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        height: auto;
+    }
+
+    .overload-grid img {
+        position: relative;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin: 0 auto;
+        top: auto;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        transform: none;
     }
 }
