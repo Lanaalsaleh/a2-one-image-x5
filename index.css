@@ -220,6 +220,7 @@ body {
     z-index: 1;
 }
 /* red layer */
+/* i wanted to get the rgb effect so i used the hue-rotate filter and contrast to change the colors  , the mix-blend-mode to blend the image layers  */
 .glitch-red {
     transform: translateX(-15px);
 
